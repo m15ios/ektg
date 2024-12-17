@@ -1,0 +1,14 @@
+name: ektg
+version: '3.7'
+
+services:
+
+  app:
+    build:
+      context: ./..
+      dockerfile: ./scripts/app/Dockerfile
+    container_name: app-container
+    ports:
+      - "8102:8102"
+    extra_hosts:
+      - host.docker.internal:host-gateway

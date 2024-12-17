@@ -1,3 +1,37 @@
+server:
+  port: 8088
+
 spring:
   application:
     name: ektg
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+  datasource:
+    url: jdbc:postgresql://db:5432/ekspg
+    username: eku01
+    password: tnG4-gr6D
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    change-log: classpath:changesets/changelog.xml
+
+# actuator
+management:
+  info:
+    env:
+      enabled: true
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: info,health,prometheus
+
+info:
+  app:
+    name: Secondhand service
+    version: 1.0.0
+    description: Сервис барахолка
