@@ -10,12 +10,22 @@ spring:
       ddl-auto: none
 
   datasource:
-    url: jdbc:postgresql://db:5432/ekspg
+    url: 
+      jdbc:
+        postgresql://db:5432/ekspg
     username: eku01
     password: tnG4-gr6D
     driver-class-name: org.postgresql.Driver
+
   liquibase:
-    change-log: classpath:changesets/changelog.xml
+    change-log: 
+      classpath: changesets/changelog.xml
+    url:
+      jdbc:
+        postgresql://db:5432/ekspg
+    username: eku01
+    password: tnG4-gr6D
+
 
 # actuator
 management:
