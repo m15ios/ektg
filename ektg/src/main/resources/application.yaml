@@ -20,11 +20,6 @@ spring:
   liquibase:
     change-log: 
       classpath: changesets/changelog.xml
-    url:
-      jdbc:
-        postgresql://db:5432/ekspg
-    username: eku01
-    password: tnG4-gr6D
 
 
 # actuator
