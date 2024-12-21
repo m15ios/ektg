@@ -7,3 +7,4 @@ databaseChangeLog:
             path: changesets/release-1.0.0/create-tables.sql
             relativeToChangelogFile: true
             endDelimiter: ";"
+            splitStatements: true
