@@ -5,21 +5,20 @@ spring:
   application:
     name: ektg2
 
-#   jpa:
-#     hibernate:
-#       #ddl-auto: none
-#       ddl-auto: update
-#       dialect: org.hibernate.dialect.PostgreSQLDialect
-#       format_sql: true
-#     show-sql: true
+  jpa:
+    hibernate:
+      ddl-auto: none
+  #     ddl-auto: update
+  #     dialect: org.hibernate.dialect.PostgreSQLDialect
+  #     format_sql: true
+  #   show-sql: true
 
-#   datasource:
-#     url: 
-#       jdbc:
-#         postgresql://db:5432/ekspg
-#     username: eku01
-#     password: tnG4-gr6D
-#     driver-class-name: org.postgresql.Driver
+        #postgresql://192.168.150.130:5432/ekspg
+  datasource:
+    url: jdbc:postgresql://dbektg:5432/ekspg
+    username: eku01
+    password: tnG4-gr6D
+    driver-class-name: org.postgresql.Driver
 
 #   liquibase:
 #     change-log: 
