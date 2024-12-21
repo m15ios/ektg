@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - changeSet:
+      id: init-database
+      author: g-man
+      changes:
+        - sqlFile:
+            path: changesets/release-1.0.0/create-tables.sql
+            relativeToChangelogFile: true
+            endDelimiter: ";"
