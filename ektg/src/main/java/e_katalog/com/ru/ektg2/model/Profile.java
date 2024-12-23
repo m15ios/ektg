@@ -3,6 +3,9 @@ package e_katalog.com.ru.ektg2.model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Column;
+import java.util.Date;
 
 @Entity
 public class Profile {

@@ -1,5 +1,7 @@
 package e_katalog.com.ru.ektg2.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -8,7 +10,7 @@ import e_katalog.com.ru.ektg2.repositories.ProfileRepository;
 
 @Service
 public class ProfileService {
-    private final profileRepository ProfileRepository;
+    private final ProfileRepository profileRepository;
 
     @Autowired
     public ProfileService(ProfileRepository profileRepository) {
@@ -19,11 +21,11 @@ public class ProfileService {
         return profileRepository.findAll();
     }
 
-    public User getProfileById(Long id) {
+    public Profile getProfileById(Long id) {
         return profileRepository.findById(id).orElse(null);
     }
 
-    public User createProfile(Profile profile) {
+    public Profile createProfile(Profile profile) {
         return profileRepository.save(profile);
     }
 
