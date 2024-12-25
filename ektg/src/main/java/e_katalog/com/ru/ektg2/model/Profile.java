@@ -1,13 +1,22 @@
 package e_katalog.com.ru.ektg2.model;
 
+import jakarta.persistence.Table;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.Getter;
+import lombok.Setter;
 import jakarta.persistence.Column;
 import java.util.Date;
 
+import lombok.Getter;
+import lombok.Setter;
+
 @Entity
+@Getter
+@Setter
+@Table(name = "profile")
 public class Profile {
 
     @Id
@@ -26,7 +35,5 @@ public class Profile {
     
     @Column(name = "create_ip_address")
     private String createIpAddress;
-
-    // getters и setters
-    
+   
 }
