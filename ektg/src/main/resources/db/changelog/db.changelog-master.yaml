@@ -8,3 +8,12 @@ databaseChangeLog:
             relativeToChangelogFile: true
             endDelimiter: ";"
             splitStatements: true
+  - changeSet:
+      id: add-fields-to-offer-01
+      author: g-man
+      changes:
+        - sqlFile:
+            path: changesets/release-1.0.0/add-fields-to-offer-01.sql
+            relativeToChangelogFile: true
+            endDelimiter: ";"
+            splitStatements: true
